@@ -15,8 +15,18 @@
     Open your `.zshrc` file in your favorite text editor and add `docker-login-manager` to the list of plugins:
 
     ```sh
-    plugins=(git docker-login-manager)
+    plugins=(
+    git 
+    docker-login-manager
+    )
     ```
+
+    Or Sed reaplce:
+
+    ```sh
+    sed -i '' '/^plugins=/ s/)/ docker-login-manager)/' ~/.zshrc
+    ```
+
 
 3. **Reload your ZSH configuration:**
 
